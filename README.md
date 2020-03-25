@@ -1,1 +1,0 @@
-# alicankahramaner.github.io
