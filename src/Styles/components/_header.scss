@@ -1,0 +1,34 @@
+#header {
+    width: $header_width;
+    height: $header_height;
+    background: $header_background;
+    box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $zIndex;
+    nav {
+        a {
+            display: inline-block;
+        }
+        &.navigation {
+            a {
+                padding: 7px 36px;
+                color: $white;
+                text-decoration: none;
+                font-size: $header_navFontSize;
+                font-weight: normal;
+                text-transform: capitalize;
+                transition: all ease-in-out $transitionDelay;
+                color: $header_navColor;
+                &.active {
+                    font-weight: normal;
+                    color: $header_navActiveColor;
+                }
+            }
+        }
+    }
+}
