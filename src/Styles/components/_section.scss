@@ -1,0 +1,65 @@
+.section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    &-content {
+        max-height: 100%;
+        overflow: auto;
+        margin-top: calc(#{$header-height} + (#{$header-height} / 2));
+        margin-bottom: $header-height;
+        background-color: rgba($white, 0.5);
+        width: 100%;
+        max-width: 1200px;
+        padding: 15px;
+        border-radius: $border_radius;
+    }
+
+    &.noTransparentContent {
+        .section-content {
+            background-color: unset;
+        }
+    }
+    &.#{map-get($directions, "TopRight")} {
+        .section-content {
+            align-self: flex-end;
+        }
+    }
+    &.#{map-get($directions, "Bottom")} {
+        justify-content: flex-end;
+    }
+    &.#{map-get($directions, "BottomLeft")} {
+        justify-content: flex-end;
+    }
+    &.#{map-get($directions, "BottomRight")} {
+        justify-content: flex-end;
+        .section-content {
+            align-self: flex-end;
+        }
+    }
+    &.#{map-get($directions, "Right")} {
+        .section-content {
+            align-self: flex-end;
+        }
+    }
+    &.#{map-get($directions, "Middle")} {
+        justify-content: center;
+        .section-content {
+            align-self: center;
+        }
+    }
+    &.#{map-get($directions, "MiddleLeft")} {
+        justify-content: center;
+    }
+    &.#{map-get($directions, "MiddleRight")} {
+        justify-content: center;
+        .section-content {
+            align-self: flex-end;
+        }
+    }
+}

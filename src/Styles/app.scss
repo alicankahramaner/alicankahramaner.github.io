@@ -1,0 +1,14 @@
+@import "variables";
+@import "utils/reset";
+@import "utils/fonts";
+@import "utils/backgrounds";
+@import "utils/helpers";
+@import "base";
+// Components
+@import "./components/header";
+@import "./components/section";
+@import "./components/picture";
+@import "./components/skilllist";
+// Pages
+@import "./pages/home.scss";
+@import "./pages/page404.scss"
