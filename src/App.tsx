@@ -1,37 +1,34 @@
-import React from 'react';
-import { Routes } from './Routes/index';
-import { iRoute } from './Models/System';
-import { Switch, Route } from 'react-router-dom';
-import { Header } from './Components/Header/Header';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AuthProvider } from "./context/auth";
+import { HttpProvider } from "./context/http";
+import { mainRouteList } from "./routes/routes";
+import { AppConfigProvider } from "./context/config";
+import { ThemeProvider } from "./context/theme";
+import { NotificationProvider } from "./context/notification";
+import { LoadingProvider } from "./context/loading";
+import 'antd/dist/reset.css';
+import { Suspense } from "react";
+import { ModalProvider } from "./context/modal";
 
-export class App extends React.Component {
-  get routes() {
-
-    return Routes.map((router: iRoute, index: number) => {
-
-      if (router.isErrorPage) {
-        return (<Route key={router.name} component={router.component} />);
-      }
-
-      return (
-        <Route
-          key={index}
-          exact={index === 0 ? true : false}
-          path={router.url}
-          component={router.component}
-        />
-      );
-    });
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <Header PagesRoutes={Routes.filter(r => !r.isErrorPage)} />
-        <Switch>
-          {this.routes}
-        </Switch>
-      </React.Fragment>
-    );
-  }
+function App() {
+  return (
+    <Suspense fallback="Loading...">
+      <AppConfigProvider>
+        <ThemeProvider>
+          <LoadingProvider>
+            <NotificationProvider>
+              <ModalProvider>
+                <AuthProvider>
+                  <HttpProvider>
+                    <RouterProvider router={createBrowserRouter(mainRouteList)} />
+                  </HttpProvider>
+                </AuthProvider>
+              </ModalProvider>
+            </NotificationProvider>
+          </LoadingProvider>
+        </ThemeProvider>
+      </AppConfigProvider>
+    </Suspense>
+  )
 }
+export default App;

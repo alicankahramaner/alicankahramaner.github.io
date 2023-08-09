@@ -1,19 +1,23 @@
-import * as React from 'react';
-import { Section } from '../Components/Section/Section';
-import { DirectionEnum } from '../Models/System';
-import { BasePage } from './BasePage';
+import { Button, Layout, Result } from 'antd';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export class Error404 extends BasePage<any, any> {
+interface Error404Props {
+}
 
-    render() {
-        return (
-            <React.Fragment>
-                <Section noTransparentContent={true} contentDirection={DirectionEnum.Middle} className={['page404', 'bgi-light']}>
-                    <h3>Aradığınız sayfayı silmiş veya hala geliştiriyor olabilir. :)</h3>
-                    <h5>Tekrar Başlamak için [index.html]</h5>
-                </Section>
-            </React.Fragment>
-        );
-    }
+export const Error404: React.FC<Error404Props> = props => {
+    const navigate = useNavigate();
 
+    return (
+        <Layout style={{height:'100vh'}}>
+            <Result
+                status={"404"}
+                title="Not Found"
+                subTitle="Sorry, the page you visited does not exist."
+                extra={
+                    <Button onClick={() => navigate('/')}>Home</Button>
+                }
+            />
+        </Layout>
+    )
 }

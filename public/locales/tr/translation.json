@@ -1,0 +1,12 @@
+{
+    "Welcome": "Hoş Geldiniz",
+    "Menu":"Menü",
+    "Navigation":{
+        "Dashboard":"Gösterge Paneli",
+        "Customers":"Bireysel Kullanıcılar",
+        "PendingApprove":"Onay Bekleyenler",
+        "CustomerDetail":"Bireysel Kullanıcı Detay",
+        "Employees":"Kullanıcılar",
+        "EmployeeList":"Kullanıcı Listesi"
+    }
+}

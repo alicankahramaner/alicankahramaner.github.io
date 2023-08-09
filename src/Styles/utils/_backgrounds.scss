@@ -1,5 +1,0 @@
-@each $name, $value in $backgrounds {
-    .bgi-#{$name} {
-        background-image: url('../../Resources/images/backgrounds/#{$value}');
-    }
-}
