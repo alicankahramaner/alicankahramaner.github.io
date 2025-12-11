@@ -1,1 +1,0 @@
-## Alican Kahramaner Offical Website

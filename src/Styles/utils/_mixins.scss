@@ -1,8 +1,0 @@
-@mixin DirectionMixin() {
-    @each $name,
-    $glyph in $icons {
-        &.#{$name} {
-            @content;
-        }
-    }
-}
