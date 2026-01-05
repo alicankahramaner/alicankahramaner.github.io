@@ -23,7 +23,7 @@
             "company": "GPay (Remote)",
             "role": "Front-End Architect",
             "date": "09.2020 - 10.2025 ",
-            "logo": "https://media.licdn.com/dms/image/v2/C560BAQHwH7z73CRgCA/company-logo_100_100/company-logo_100_100/0/1630624642032/gpay_global_logo?e=1767225600&v=beta&t=LGDD4cjUTfNj0Ib3OsYABR00xS8Yr2nStKef5MRQ_lc",
+            "logo": "/assets/data/company-logos/gpay.png",
             "projects": [
                 "Payment System React Web Application",
                 "Android POS Sales Application (React Native + NativeModules)"
@@ -33,7 +33,7 @@
             "company": "DataSoft (Hybrid)",
             "role": "Senior Front-End Developer",
             "date": "01.2019 - 09.2020",
-            "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQEnwmnWoK4Yfw/company-logo_200_200/company-logo_200_200/0/1683291734917/datasoftyazilim_logo?e=1767225600&v=beta&t=r29ziX2GbZx_ZvUS2JG99utF0DLeaN654Mwbl2SBMBc",
+            "logo": "/assets/data/company-logos/datasoft.png",
             "projects": [
                 "ERP Project React Web Application"
             ]
@@ -42,7 +42,7 @@
             "company": "CodinQ (Remote)",
             "role": "Senior Front-End Developer",
             "date": "11.2017 - 07.2018",
-            "logo": "https://media.licdn.com/dms/image/v2/C560BAQHFYDyrhJCF_w/company-logo_100_100/company-logo_100_100/0/1631391874812?e=1767225600&v=beta&t=dWB3Lcgj_-D_LPbeTpOR-dV213SI7RDVuW5VKmEtKSo",
+            "logo": "/assets/data/company-logos/codinq.png",
             "projects": [
                 "Multi-Tenant CMS System - Vue Web Application"
             ]
@@ -51,7 +51,7 @@
             "company": "NetBt Danışmanlık Hizmetleri",
             "role": "Senior Front-End Developer",
             "date": "10.2017 - 09.2017",
-            "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQFUmfZKgW50_g/company-logo_100_100/company-logo_100_100/0/1680087520090/netbt_consulting_logo?e=1767225600&v=beta&t=-0TtO1rFRGkOZ3G8j00Mrrf-qTavPh7isG6jAdeXCDA",
+            "logo": "/assets/data/company-logos/netbt.png",
             "projects": [
                 "Mevcut projelerin bugfix'leri ve geliştirmeleri"
             ]
@@ -60,7 +60,7 @@
             "company": "Neyasis Technology",
             "role": "Senior Front-End Developer",
             "date": "08.2016 - 09.2017",
-            "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQHfAv6FOjYqZw/company-logo_100_100/company-logo_100_100/0/1630576533090/neyasis_technology_logo?e=1767225600&v=beta&t=GXgq1fFKdmm-KuyTwcNwPbTd_cs8m3nICmBXG9L9Qpw",
+            "logo": "/assets/data/company-logos/neyasis.png",
             "projects": [
                 "Mercedes-Benz Mlab Web Application Vanilia JS + SCSS",
                 "Gilead - Tendering management system",
@@ -71,7 +71,7 @@
             "company": "MagiClick Digital Solutions",
             "role": "Front-End Developer",
             "date": "04.2014 - 12.2014",
-            "logo": "https://media.licdn.com/dms/image/v2/C4D0BAQGy143ukpjytA/company-logo_100_100/company-logo_100_100/0/1630530279204/magiclick_digital_solutions_logo?e=1767225600&v=beta&t=i9PASww3frMtbxJFjKaT3-sNOO309RCRp7C7DIhEgNE",
+            "logo": "/assets/data/company-logos/magiclick.png",
             "projects": [
                 "TurkTelekom Bulut",
                 "YapıKredi Nuvo",
