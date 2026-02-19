@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alican Kahramaner - Senior Front-End Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      background: #eee;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      color: #222;
+      font-size: 14px;
+      line-height: 26px;
+      padding-bottom: 50px;
+    }
+
+    /* ── Lang Toggle ── */
+    .cv-toolbar {
+      max-width: 700px;
+      margin: 20px auto 0;
+      padding: 0 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .lang-toggle {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #153e62;
+      letter-spacing: 1px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .lang-toggle:hover {
+      background: #153e62;
+      color: #fff;
+      border-color: #153e62;
+    }
+
+    .back-btn {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #555;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #555;
+      color: #fff;
+      border-color: #555;
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 700px;
+      background: #fff;
+      margin: 10px auto 0;
+      box-shadow: 1px 1px 2px #dad7d7;
+      border-radius: 3px;
+      padding: 40px;
+    }
+
+    .header {
+      margin-bottom: 30px;
+    }
+
+    .header .full-name {
+      font-size: 28px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .header .first-name {
+      font-weight: 700;
+    }
+
+    .header .last-name {
+      font-weight: 300;
+    }
+
+    .header .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .header .email,
+    .header .phone {
+      color: #153e62;
+      font-weight: 500;
+    }
+
+    .header>a {
+      color: black;
+    }
+
+    .header .separator {
+      height: 10px;
+      display: inline-block;
+      border-left: 2px solid #999;
+      margin: 0px 10px;
+    }
+
+    .header .position {
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: underline;
+    }
+
+    .details {
+      line-height: 20px;
+    }
+
+    .details .section {
+      margin-bottom: 40px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .details .section:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    .details .section__title {
+      letter-spacing: 2px;
+      color: #54afe4;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .details .section__list-item {
+      margin-bottom: 40px;
+    }
+
+    .details .section__list-item:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .details .left,
+    .details .right {
+      vertical-align: top;
+      display: inline-block;
+    }
+
+    .details .left {
+      width: 60%;
+    }
+
+    .details .right {
+      text-align: left;
+      width: 39%;
+    }
+
+    .details .name {
+      font-weight: bold;
+    }
+
+    .details a {
+      text-decoration: none;
+      color: #000;
+      font-style: italic;
+    }
+
+    .details a:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+
+    .skills span {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .col {
+      width: 50%;
+    }
+
+    .details .skills__item .point {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: #c3def3;
+      border-radius: 20px;
+      margin-right: 3px;
+      background: #79a9ce;
+    }
+
+    .header-top {
+      display: flex;
+      gap: 15px;
+    }
+
+    .header-top .left {
+      width: 25%;
+      float: left;
+      flex-basis: 30%;
+    }
+
+    .header img {
+      width: 100%;
+      border-radius: 100%;
+    }
+
+    .header-top .right {
+      width: 70%;
+      float: left;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about {
+      margin-top: 20px;
+    }
+
+    .about p {
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @media print {
+      .cv-toolbar {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+        padding-bottom: 0;
+      }
+
+      .container {
+        box-shadow: none;
+        margin-top: 0;
+      }
+    }
+
+    .pdf-btn {
+      background: #153e62;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      letter-spacing: 1px;
+      transition: background 0.2s;
+    }
+
+    .pdf-btn:hover {
+      background: #0d2a45;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Toolbar -->
+  <div class="cv-toolbar">
+    <a href="../index.html" class="back-btn">← Portfolio</a>
+    <button class="lang-toggle" id="lang-toggle">
+      <span id="lang-label">EN</span>
+    </button>
+    <button class="pdf-btn" id="pdf-btn">
+      ↓ PDF
+    </button>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-top">
+        <div class="left">
+          <img src="./assets/img/profile.jpg" alt="Alican Kahramaner">
+        </div>
+        <div class="right">
+          <div class="full-name">
+            <span class="first-name">Alican</span>
+            <span class="last-name">Kahramaner</span>
+          </div>
+          <div>
+            <span class="title" id="cv-job-title"></span>
+          </div>
+          <div class="contact-info">
+            <span>
+              <span class="email">Email: </span>
+              <span class="email-val"><a href="mailto:alicankahramaner@gmail.com">alicankahramaner@gmail.com</a></span>
+            </span>
+            <span>
+              <span class="phone">Phone: </span>
+              <span class="phone-val"><a href="tel:+905388247466">+90 538 824 74 66</a></span>
+            </span>
+            <span>
+              <span class="phone">LinkedIn: </span>
+              <span class="phone-val"><a target="_blank"
+                  href="https://www.linkedin.com/in/alicankahramaner/">alicankahramaner</a></span>
+            </span>
+            <span>
+              <span class="phone">GitHub: </span>
+              <span class="phone-val"><a target="_blank"
+                  href="https://github.com/alicankahramaner">alicankahramaner</a></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <span class="desc" id="cv-about"></span>
+      </div>
+    </div>
+
+    <!-- Details -->
+    <div class="details">
+
+      <!-- Experience -->
+      <div class="section">
+        <div class="section__title" id="section-experience-title"></div>
+        <div class="section__list" id="cv-experience">
+          <!-- Injected by cv.js -->
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <div class="section__title" id="section-education-title"></div>
+        <div class="section__list" id="cv-education">
+          <!-- Injected by cv.js -->
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="section__title" id="section-projects-title"></div>
+        <div class="section__list" id="cv-projects">
+          <!-- Injected by cv.js -->
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="section row">
+        <div class="col">
+          <div class="section__title" id="section-skills-lang-title"></div>
+          <div class="skills" id="cv-skills-language">
+            <!-- Injected by cv.js -->
+          </div>
+        </div>
+        <div class="col">
+          <div class="section__title" id="section-skills-domain-title"></div>
+          <div class="skills" id="cv-skills-domain">
+            <!-- Injected by cv.js -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./assets/js/cv.js"></script>
+</body>
+
+</html>

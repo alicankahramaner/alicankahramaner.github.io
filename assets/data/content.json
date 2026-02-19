@@ -1,86 +1,327 @@
 {
-    "about": {
-        "title": "Hakkımda",
-        "description": "Ben, yazılımın hem görünümünün hem de performansının mükemmel olması gerektiğine inanan bir yazılım geliştiricisiyim.",
-        "bio": "10 yılı aşkın süredir profesyonel olarak Front-End geliştirme yapıyorum. Modern web ve mobil teknolojilere tutkulu bir şekilde odaklanıyorum. React.js, React Native ve ödeme sistemleri konusunda derin bir uzmanlığa sahibim. UI/UX geliştirmeden REST API entegrasyonlarına, Android POS sistemlerinden Native Module geliştirmeye kadar projelerin başından sonuna kadar çözüm üretebiliyorum. Yeni teknolojileri yakından takip eder, performans, güvenlik ve kullanıcı deneyimini her zaman ön planda tutarım. Uzaktan ya da ekip çalışmasında iletişim, planlama ve problem çözme becerilerimle sürece katkı sağlamayı hedeflerim.",
-        "skills": [
+    "meta": {
+        "name": "Alican Kahramaner",
+        "email": "alicankahramaner@gmail.com",
+        "phone": "+90 538 824 74 66",
+        "linkedin": "https://www.linkedin.com/in/alicankahramaner/",
+        "github": "https://github.com/alicankahramaner"
+    },
+    "portfolio": {
+        "nav": {
+            "links": [
+                {
+                    "href": "#about",
+                    "tr": "Hakkımda",
+                    "en": "About"
+                },
+                {
+                    "href": "#experience",
+                    "tr": "Deneyimlerim",
+                    "en": "Experience"
+                },
+                {
+                    "href": "#contact",
+                    "tr": "İletişim",
+                    "en": "Contact"
+                }
+            ],
+            "cvButton": {
+                "tr": "CV",
+                "en": "CV"
+            }
+        },
+        "hero": {
+            "title": {
+                "tr": "Performans, ölçek ve sadelik.",
+                "en": "Performance, scale and simplicity."
+            },
+            "subtitle": {
+                "tr": "Detayda titiz, çözümde net.",
+                "en": "Meticulous in detail, clear in solution."
+            },
+            "cta": {
+                "tr": "Deneyimlerim",
+                "en": "Experience"
+            }
+        },
+        "about": {
+            "title": {
+                "tr": "Hakkımda",
+                "en": "About Me"
+            },
+            "description": {
+                "tr": "Ben, yazılımın hem görünümünün hem de performansının mükemmel olması gerektiğine inanan bir yazılım geliştiricisiyim.",
+                "en": "I am a software developer who believes both the appearance and performance of software must be excellent."
+            },
+            "bio": {
+                "tr": "10 yılı aşkın süredir profesyonel olarak Front-End geliştirme yapıyorum. Modern web ve mobil teknolojilere tutkulu bir şekilde odaklanıyorum. React.js, React Native ve ödeme sistemleri konusunda derin bir uzmanlığa sahibim. UI/UX geliştirmeden REST API entegrasyonlarına, Android POS sistemlerinden Native Module geliştirmeye kadar projelerin başından sonuna kadar çözüm üretebiliyorum. Yeni teknolojileri yakından takip eder, performans, güvenlik ve kullanıcı deneyimini her zaman ön planda tutarım. Uzaktan ya da ekip çalışmasında iletişim, planlama ve problem çözme becerilerimle sürece katkı sağlamayı hedeflerim.",
+                "en": "I have been professionally developing Front-End for over 10 years. I am passionately focused on modern web and mobile technologies. I have deep expertise in React.js, React Native and payment systems. From UI/UX development to REST API integrations, from Android POS systems to Native Module development, I can produce solutions from start to finish. I closely follow new technologies and always prioritize performance, security and user experience. I aim to contribute through communication, planning and problem-solving skills in remote or team environments."
+            },
+            "skillsTitle": {
+                "language": {
+                    "tr": "Dil Odaklı Beceriler",
+                    "en": "Language-Oriented Skills"
+                },
+                "domain": {
+                    "tr": "Alan Odaklı Beceriler",
+                    "en": "Domain-Oriented Skills"
+                }
+            }
+        },
+        "contact": {
+            "title": {
+                "tr": "Birlikte Çalışalım",
+                "en": "Let's Work Together"
+            },
+            "subtitle": {
+                "tr": "Freelance işler ve yeni kariyer fırsatları için, yaratıcı bir dokunuş gerektiren projeler hakkında konuşmaktan memnuniyet duyarım.",
+                "en": "For freelance work and new career opportunities, I would be happy to talk about projects that require a creative touch."
+            },
+            "cta": {
+                "tr": "İletişim",
+                "en": "Contact"
+            }
+        },
+        "footer": {
+            "text": {
+                "tr": "© 2024 Alican Kahramaner. Tüm hakları saklıdır.",
+                "en": "© 2024 Alican Kahramaner. All rights reserved."
+            }
+        }
+    },
+    "cv": {
+        "pageTitle": {
+            "tr": "Alican Kahramaner - Front-End Architect",
+            "en": "Alican Kahramaner - Front-End Architect"
+        },
+        "jobTitle": {
+            "tr": "Front-End Architect",
+            "en": "Front-End Architect"
+        },
+        "about": {
+            "tr": "10 yılı aşkın süredir profesyonel olarak Front-End geliştirme yapıyorum. Modern web ve mobil teknolojilere tutkulu bir şekilde odaklanıyorum. JavaScript, React.js, React Native ve ödeme sistemleri konusunda derin bir uzmanlığa sahibim. UI/UX geliştirmeden REST API entegrasyonlarına, Android POS sistemlerinden Native Module geliştirmeye kadar projelerin başından sonuna kadar çözüm üretebiliyorum. Yeni teknolojileri yakından takip eder, performans, güvenlik ve kullanıcı deneyimini her zaman ön planda tutarım. Uzaktan ya da ekip çalışmasında iletişim, planlama ve problem çözme becerilerimle sürece katkı sağlamayı hedeflerim.",
+            "en": "I have been professionally developing Front-End for over 10 years. I am passionately focused on modern web and mobile technologies. I have deep expertise in JavaScript, React.js, React Native and payment systems. From UI/UX development to REST API integrations, from Android POS systems to Native Module development, I can produce solutions from start to finish. I closely follow new technologies and always prioritize performance, security and user experience. I aim to contribute through communication, planning and problem-solving skills in remote or team environments."
+        },
+        "sections": {
+            "experience": {
+                "tr": "Deneyim",
+                "en": "Experience"
+            },
+            "education": {
+                "tr": "Eğitim",
+                "en": "Education"
+            },
+            "projects": {
+                "tr": "Projeler",
+                "en": "Projects"
+            },
+            "skillsLang": {
+                "tr": "Dil Odaklı Beceriler",
+                "en": "Language-Oriented Skills"
+            },
+            "skillsDomain": {
+                "tr": "Alan Odaklı Beceriler",
+                "en": "Domain-Oriented Skills"
+            }
+        },
+        "education": {
+            "school": {
+                "tr": "İstanbul Beyken Üniversitesi",
+                "en": "Istanbul Beykent University"
+            },
+            "dept": {
+                "tr": "Bilgisayar Programcılığı",
+                "en": "Computer Programming"
+            },
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
+            "date": "2012 - 2014"
+        }
+    },
+    "skills": {
+        "language": [
             "JavaScript",
-            "React",
-            "React-Native",
             "TypeScript",
-            "Styled-Components",
-            "Rest-API",
-            "FinTech",
+            "React.JS",
+            "React-Native",
+            "VueJS",
+            "Next.js",
             "Node.js",
-            "CSS/Sass",
-            "UI/UX",
+            "Vite",
+            "TurboRepo",
+            "CSS/CSS3",
+            "HTML/HTML5"
+        ],
+        "domain": [
+            "Payment System",
+            "RestApi",
+            "Debug",
             "Monorepo",
-            "Cloud Deployment"
+            "Android POS App-To-App communication",
+            "Mobile Integration & Native Modules",
+            "Performance Optimization",
+            "CI/CD",
+            "Cloud Deployment (GCP, AWS, Azure)",
+            "Cross-Platform Development Strategy",
+            "UI/UX Implementation",
+            "Project Planning & Analysis",
+            "JIRA",
+            "Git",
+            "Docker"
         ]
     },
     "experience": [
         {
             "company": "GPay (Remote)",
             "role": "Front-End Architect",
-            "date": "09.2020 - 10.2025 ",
+            "date": "09.2020 - 10.2025",
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
             "logo": "/assets/data/company-logos/gpay.png",
-            "projects": [
-                "Payment System React Web Application",
-                "Android POS Sales Application (React Native + NativeModules)"
-            ]
+            "projects": {
+                "tr": [
+                    "Ödeme Sistemi React Web Uygulaması",
+                    "Android POS Satış Uygulaması (React Native + NativeModules)"
+                ],
+                "en": [
+                    "Payment System React Web Application",
+                    "Android POS Sales Application (React Native + NativeModules)"
+                ]
+            },
+            "cvDescription": {
+                "tr": "Backoffice (admin panel), partner panel ve kullanıcı ödeme ekranlarının tasarım ve geliştirmesini gerçekleştirdim. Rest API entegrasyonları, UI/UX tasarımı ve tüm işlevsel JavaScript işlemlerini uçtan uca geliştirdim.",
+                "en": "Designed and developed backoffice (admin panel), partner panel and user payment screens. Implemented Rest API integrations, UI/UX design and all functional JavaScript end-to-end."
+            }
         },
         {
             "company": "DataSoft (Hybrid)",
             "role": "Senior Front-End Developer",
             "date": "01.2019 - 09.2020",
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
             "logo": "/assets/data/company-logos/datasoft.png",
-            "projects": [
-                "ERP Project React Web Application"
-            ]
+            "projects": {
+                "tr": [
+                    "ERP Projesi React Web Uygulaması"
+                ],
+                "en": [
+                    "ERP Project React Web Application"
+                ]
+            },
+            "cvDescription": {
+                "tr": "Multi Tenant .Net ERP projesinin panellerinin React.JS ile WebApp'inin geliştirilmesi. Yeni Componentlerin veya Feature'ların geliştirilmesinde bulundum. E-Fatura ve E-Arşiv ekranları gibi multi-field form ekranlarında çalışmalarım oldu. Projede uçtan uca geliştirme yaptım.",
+                "en": "Developed the WebApp panels of a Multi Tenant .Net ERP project with React.JS. Contributed to developing new Components and Features. Worked on multi-field form screens such as E-Invoice and E-Archive screens. Developed end-to-end in the project."
+            }
         },
         {
             "company": "CodinQ (Remote)",
             "role": "Senior Front-End Developer",
             "date": "11.2017 - 07.2018",
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
             "logo": "/assets/data/company-logos/codinq.png",
-            "projects": [
-                "Multi-Tenant CMS System - Vue Web Application"
-            ]
+            "projects": {
+                "tr": [
+                    "Multi-Tenant CMS Sistemi - Vue Web Uygulaması"
+                ],
+                "en": [
+                    "Multi-Tenant CMS System - Vue Web Application"
+                ]
+            },
+            "cvDescription": {
+                "tr": ".NET tabanlı bir projede, Vue.js kullanarak dinamik ve yeniden kullanılabilir componentler geliştirdim. Uygulamanın REST API üzerinden backend ile veri alışverişini sağladım ve sistemin ön yüz – arka yüz entegrasyonunu optimize ettim. Ayrıca, kullanıcı deneyimini kişiselleştirmek adına çoklu tema desteği ve tema özelleştirme özellikleri geliştirdim.",
+                "en": "Developed dynamic and reusable components using Vue.js in a .NET-based project. Handled data exchange between the application and backend via REST API and optimized front-end/back-end integration. Also developed multi-theme support and theme customization features to personalize user experience."
+            }
         },
         {
             "company": "NetBt Danışmanlık Hizmetleri",
             "role": "Senior Front-End Developer",
-            "date": "10.2017 - 09.2017",
+            "date": "10.2017 - 11.2017",
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
             "logo": "/assets/data/company-logos/netbt.png",
-            "projects": [
-                "Mevcut projelerin bugfix'leri ve geliştirmeleri"
-            ]
+            "projects": {
+                "tr": [
+                    "Mevcut projelerin bugfix'leri ve geliştirmeleri"
+                ],
+                "en": [
+                    "Bug fixes and improvements on existing projects"
+                ]
+            },
+            "cvDescription": {
+                "tr": "Mevcut projelerin bakımı, hata düzeltmeleri ve yeni özellik geliştirmeleri.",
+                "en": "Maintenance, bug fixes and new feature development on existing projects."
+            }
         },
         {
             "company": "Neyasis Technology",
             "role": "Senior Front-End Developer",
             "date": "08.2016 - 09.2017",
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
             "logo": "/assets/data/company-logos/neyasis.png",
-            "projects": [
-                "Mercedes-Benz Mlab Web Application Vanilia JS + SCSS",
-                "Gilead - Tendering management system",
-                "Mevcut projelerin hata ve geliştirmeleri"
-            ]
+            "projects": {
+                "tr": [
+                    "Mercedes-Benz Mlab Web Uygulaması Vanilla JS + SCSS",
+                    "Gilead - İhale Yönetim Sistemi",
+                    "Mevcut projelerin hata ve geliştirmeleri"
+                ],
+                "en": [
+                    "Mercedes-Benz Mlab Web Application Vanilla JS + SCSS",
+                    "Gilead - Tendering management system",
+                    "Bug fixes and improvements on existing projects"
+                ]
+            },
+            "cvDescription": {
+                "tr": "Müşteri geri bildirimleri için interaktif anket web uygulaması. Vanilla JS ve SCSS/CSS3 ile arayüz yapıldı. MVC ve RestAPI ile birlikte geliştirildi.",
+                "en": "Interactive survey web application for customer feedback. Interface built with Vanilla JS and SCSS/CSS3. Developed together with MVC and RestAPI."
+            }
         },
         {
             "company": "MagiClick Digital Solutions",
             "role": "Front-End Developer",
             "date": "04.2014 - 12.2014",
+            "location": {
+                "tr": "İstanbul / Türkiye",
+                "en": "Istanbul / Turkey"
+            },
             "logo": "/assets/data/company-logos/magiclick.png",
-            "projects": [
-                "TurkTelekom Bulut",
-                "YapıKredi Nuvo",
-                "Turk Telekom Kurumsal Ürünler Web Site",
-                "The Marmara Collection",
-                "Yatırım Finansman",
-                "İş Bankası - İşte Kobi (istekobi.com.tr)",
-                "Türk Telekom İşiniz İçin Biz"
-            ]
+            "projects": {
+                "tr": [
+                    "TurkTelekom Bulut",
+                    "YapıKredi Nuvo",
+                    "Türk Telekom Kurumsal Ürünler Web Sitesi",
+                    "The Marmara Collection",
+                    "Yatırım Finansman",
+                    "İş Bankası - İşte Kobi (istekobi.com.tr)",
+                    "Türk Telekom İşiniz İçin Biz"
+                ],
+                "en": [
+                    "TurkTelekom Cloud",
+                    "YapıKredi Nuvo",
+                    "Turk Telekom Corporate Products Website",
+                    "The Marmara Collection",
+                    "Yatırım Finansman",
+                    "İş Bankası - İşte Kobi (istekobi.com.tr)",
+                    "Türk Telekom İşiniz İçin Biz"
+                ]
+            },
+            "cvDescription": {
+                "tr": "Çeşitli kurumsal müşteriler için web uygulamaları ve kurumsal web siteleri geliştirdim. HTML, CSS ve JavaScript kullanarak responsive ve cross-browser uyumlu arayüzler oluşturdum.",
+                "en": "Developed web applications and corporate websites for various enterprise clients. Created responsive and cross-browser compatible interfaces using HTML, CSS and JavaScript."
+            }
         }
     ]
 }

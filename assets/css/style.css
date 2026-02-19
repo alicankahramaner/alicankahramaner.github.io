@@ -8,6 +8,7 @@
     /* Apple-like almost black */
     --text-secondary: #86868b;
     --accent-color: #0071e3;
+    --accent: #0071e3;
     /* Classic Apple Blue */
     --border-color: #d2d2d7;
     --nav-bg: rgba(255, 255, 255, 0.8);
@@ -30,6 +31,7 @@
     --text-primary: #f5f5f7;
     --text-secondary: #86868b;
     --accent-color: #2997ff;
+    --accent: #2997ff;
     /* Lighter blue for dark mode */
     --border-color: #424245;
     --nav-bg: rgba(0, 0, 0, 0.8);
@@ -168,6 +170,60 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* CV Button */
+.btn-primary {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border: 1.5px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 980px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+/* Language Toggle */
+.lang-toggle {
+    background: none;
+    border: 1.5px solid var(--border-color);
+    border-radius: 980px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.lang-toggle:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+/* Skill Tags */
+.skill-tag {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
 }
 
 .nav-links {

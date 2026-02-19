@@ -26,41 +26,46 @@
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo" style="font-weight: 600; color: var(--text-primary);">
-                    <!-- <img src="assets/img/logo.png" alt="Logo"> -->
                     Alican Kahramaner
                 </a>
 
-                <ul class="nav-links">
-                    <li><a href="#about" class="nav-link">Hakkımda</a></li>
-                    <li><a href="#experience" class="nav-link">Deneyimlerim</a></li>
-                    <li><a href="#contact" class="nav-link">İletişim</a></li>
+                <ul class="nav-links" id="nav-links">
+                    <!-- Injected by JS -->
                 </ul>
 
-                <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
+                <div class="nav-actions">
+                    <a href="cv/index.html" target="_blank" class="btn-primary" id="cv-btn">CV</a>
+                    <a href="https://github.com/alicankahramaner" target="_blank" class="btn-primary">GitHub</a>
 
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
-                    <!-- Icon will be injected by JS -->
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Toggle Language">
+                        <span id="lang-label">TR</span>
+                    </button>
+
+                    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -72,9 +77,9 @@
                 <div class="hero-logo-container">
                     <img src="assets/img/logo.png" alt="Logo">
                 </div>
-                <h1 class="h1 hero-title">Temiz kod ve sağlam mimariye odaklanan yazılım.</h1>
-                <p class="text-lead hero-subtitle">Detayda titiz, çözümde net.</p>
-                <a href="#experience" class="btn">Deneyimlerim</a>
+                <h1 class="h1 hero-title" id="hero-title"></h1>
+                <p class="text-lead hero-subtitle" id="hero-subtitle"></p>
+                <a href="#experience" class="btn" id="hero-cta"></a>
             </div>
         </section>
 
@@ -86,10 +91,10 @@
             </div>
         </section>
 
-        <!-- Experience Section (Renamed from Projects) -->
+        <!-- Experience Section -->
         <section id="experience" class="section" style="background-color: var(--bg-secondary);">
             <div class="container">
-                <h2 class="h2" style="text-align: center; margin-bottom: 3rem;">Deneyimlerim</h2>
+                <h2 class="h2" style="text-align: center; margin-bottom: 3rem;" id="experience-title"></h2>
                 <div class="experience-list" id="experience-container">
                     <!-- Dynamic Content injected here -->
                     <div class="loading-state">Loading...</div>
@@ -100,11 +105,10 @@
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container" style="max-width: 600px; text-align: center;">
-                <h2 class="h2">Birlikte Çalışalım</h2>
-                <p class="text-lead" style="margin-bottom: 3rem;">Freelance işler ve yeni kariyer fırsatları için,
-                    yaratıcı bir dokunuş gerektiren projeler hakkında konuşmaktan memnuniyet duyarım.</p>
-                <a href="mailto:alicankahramaner@gmail.com" class="btn"
-                    style="font-size: 1.1rem; padding: 1rem 2.5rem;">İletişim</a>
+                <h2 class="h2" id="contact-title"></h2>
+                <p class="text-lead" style="margin-bottom: 3rem;" id="contact-subtitle"></p>
+                <a href="mailto:alicankahramaner@gmail.com" class="btn" style="font-size: 1.1rem; padding: 1rem 2.5rem;"
+                    id="contact-cta"></a>
             </div>
         </section>
     </main>
@@ -112,7 +116,7 @@
     <footer
         style="padding: 2rem 0; text-align: center; color: var(--text-secondary); border-top: 1px solid var(--border-color);">
         <div class="container">
-            <p>&copy; 2024 Alican Kahramaner. All rights reserved.</p>
+            <p id="footer-text"></p>
         </div>
     </footer>
 
