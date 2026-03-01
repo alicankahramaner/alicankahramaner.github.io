@@ -184,12 +184,14 @@
             "logo": "/assets/data/company-logos/gpay.png",
             "projects": {
                 "tr": [
-                    "Ödeme Sistemi React Web Uygulaması",
-                    "Android POS Satış Uygulaması (React Native + NativeModules)"
+                    "Ödeme Sistemi React Web Uygulaması (React, Context API, SignalR, TypeScript, .Net REST API)",
+                    "Billonga Android POS Satış Uygulaması (React Native, NativeModules, React-Context API, Zustand)",
+                    "SuperApp - Front End Monorepo (Turborepo, React, pnpm, React Native, Vite)"
                 ],
                 "en": [
-                    "Payment System React Web Application",
-                    "Android POS Sales Application (React Native + NativeModules)"
+                    "Payment System React Web Application (React, Context API, SignalR, TypeScript, .Net REST API)",
+                    "Billonga Android POS Sales Application (React Native, NativeModules, React-Context API, Zustand)",
+                    "SuperApp - Front End Monorepo (Turborepo, React, pnpm, React Native, Vite)"
                 ]
             },
             "cvDescription": {
