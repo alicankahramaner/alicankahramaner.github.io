@@ -17,7 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateLangLabel() {
         const label = document.getElementById('lang-label');
+        let address = document.getElementById("address");
+        if (address) {
+            address.innerText = lang === 'tr' ? 'Address: ' : 'Adres: ';
+        }
         if (label) label.textContent = lang === 'tr' ? 'EN' : 'TR';
+
     }
 
     const langToggleBtn = document.getElementById('lang-toggle');
@@ -72,25 +77,33 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!containerEl) return;
 
         containerEl.innerHTML = experience.map(item => {
-            const projects = t(item.projects);
-            const projectsHtml = Array.isArray(projects)
-                ? projects.map(p => `<li>${p}</li>`).join('')
-                : '';
+            const projects = item.projects || [];
+            const projectsHtml = projects.map(p => {
+                const title = t(p.name);
+                const desc = t(p.description);
+                const techList = Array.isArray(p.technologies) && p.technologies.length > 0
+                    ? `<div class="project-tech" style="font-size: 0.85em; color: #555; margin-top: 2px;"><strong>Tech:</strong> ${p.technologies.join(', ')}</div>`
+                    : '';
+                const descBlock = desc ? `<div class="project-desc" style="font-size: 0.9em; margin-top: 4px; color: #444;">${desc}</div>` : '';
+
+                return `<li style="margin-bottom: 8px;"><div style="font-weight: 500;">${title}</div>${descBlock}${techList}</li>`;
+            }).join('');
 
             return `
-                <div class="section__list-item">
+                <article class="section__list-item">
                     <div class="left">
-                        <div class="name">${item.company}</div>
+                        <h3 class="name">${item.company}</h3>
                         <div class="addr">${t(item.location)}</div>
                         <div class="duration">${item.date}</div>
                     </div>
                     <div class="right">
-                        <div class="name">${item.role}</div>
+                        <h3 class="name">${item.role}</h3>
+                        <hr />
                         <div class="desc">
                             <ul>${projectsHtml}</ul>
                         </div>
                     </div>
-                </div>
+                </article>
             `;
         }).join('');
     }
@@ -125,12 +138,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // Only items that have a cvDescription
         const projectItems = experience.filter(item => item.cvDescription);
 
-        el.innerHTML = projectItems.map(item => `
-            <div class="section__list-item">
-                <div class="name">${Array.isArray(t(item.projects)) ? t(item.projects)[0] : ''} - ${item.company}</div>
+        el.innerHTML = projectItems.map(item => {
+            const firstProject = item.projects && item.projects.length > 0 ? t(item.projects[0].name) : '';
+            const techList = item.projects && item.projects.length > 0 && Array.isArray(item.projects[0].technologies) && item.projects[0].technologies.length > 0
+                ? `<div style="font-size: 0.85em; color: #555; margin-top: 4px;"><strong>Tech:</strong> ${item.projects[0].technologies.join(', ')}</div>`
+                : '';
+            return `
+            <article class="section__list-item">
+                <h3 class="name">${firstProject ? firstProject + ' - ' : ''}${item.company}</h3>
                 <div class="text">${t(item.cvDescription)}</div>
-            </div>
-        `).join('');
+                ${techList}
+            </article>
+            `;
+        }).join('');
     }
 
     function renderSkills(skills, cv) {

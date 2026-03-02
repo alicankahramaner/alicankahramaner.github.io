@@ -7,6 +7,7 @@
   <title>Alican Kahramaner - Senior Front-End Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="assets/img/favicon.ico">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
@@ -84,7 +85,7 @@
 
     /* ── Container ── */
     .container {
-      max-width: 700px;
+      max-width: 800px;
       background: #fff;
       margin: 10px auto 0;
       box-shadow: 1px 1px 2px #dad7d7;
@@ -163,6 +164,9 @@
     }
 
     .details .section__list-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       margin-bottom: 40px;
     }
 
@@ -177,12 +181,16 @@
     }
 
     .details .left {
-      width: 60%;
+      flex-basis: 30%;
     }
 
     .details .right {
       text-align: left;
-      width: 39%;
+      flex-basis: 50%;
+    }
+
+    .details .right hr {
+      margin: 5px 0px;
     }
 
     .details .name {
@@ -276,6 +284,10 @@
         box-shadow: none;
         margin-top: 0;
       }
+
+      .about {
+        margin-top: 0px;
+      }
     }
 
     .pdf-btn {
@@ -310,22 +322,19 @@
     </button>
   </div>
 
-  <div class="container">
+  <main class="container">
     <!-- Header -->
-    <div class="header">
+    <header class="header">
       <div class="header-top">
-        <div class="left">
-          <img src="/assets/img/profile.jpg" alt="Alican Kahramaner">
-        </div>
         <div class="right">
-          <div class="full-name">
+          <h1 class="full-name">
             <span class="first-name">Alican</span>
             <span class="last-name">Kahramaner</span>
-          </div>
+          </h1>
           <div>
             <span class="title" id="cv-job-title"></span>
           </div>
-          <div class="contact-info">
+          <address class="contact-info" style="font-style: normal;">
             <span>
               <span class="email">Email: </span>
               <span class="email-val"><a href="mailto:alicankahramaner@gmail.com">alicankahramaner@gmail.com</a></span>
@@ -344,60 +353,64 @@
               <span class="phone-val"><a target="_blank"
                   href="https://github.com/alicankahramaner">alicankahramaner</a></span>
             </span>
-          </div>
+            <span>
+              <span id="address" class="address">Address:</span>
+              <span class="address-val">İstanbul, Türkiye</span>
+            </span>
+          </address>
         </div>
       </div>
 
-      <div class="about">
-        <span class="desc" id="cv-about"></span>
+      <div class="about" id="cv-about">
+        <!-- Rendered by cv.js -->
       </div>
-    </div>
+    </header>
 
     <!-- Details -->
-    <div class="details">
+    <article class="details">
 
       <!-- Experience -->
-      <div class="section">
-        <div class="section__title" id="section-experience-title"></div>
+      <section class="section">
+        <h2 class="section__title" id="section-experience-title"></h2>
         <div class="section__list" id="cv-experience">
           <!-- Injected by cv.js -->
         </div>
-      </div>
+      </section>
 
       <!-- Education -->
-      <div class="section">
-        <div class="section__title" id="section-education-title"></div>
+      <section class="section">
+        <h2 class="section__title" id="section-education-title"></h2>
         <div class="section__list" id="cv-education">
           <!-- Injected by cv.js -->
         </div>
-      </div>
+      </section>
 
       <!-- Projects -->
-      <div class="section">
-        <div class="section__title" id="section-projects-title"></div>
-        <div class="section__list" id="cv-projects">
-          <!-- Injected by cv.js -->
-        </div>
-      </div>
+      <!-- <section class="section"> -->
+      <!-- <h2 class="section__title" id="section-projects-title"></h2> -->
+      <!-- <div class="section__list" id="cv-projects"> -->
+      <!-- Injected by cv.js -->
+      <!-- </div> -->
+      <!-- </section> -->
 
       <!-- Skills -->
-      <div class="section row">
+      <section class="section row">
         <div class="col">
-          <div class="section__title" id="section-skills-lang-title"></div>
+          <h2 class="section__title" id="section-skills-lang-title"></h2>
           <div class="skills" id="cv-skills-language">
             <!-- Injected by cv.js -->
           </div>
         </div>
         <div class="col">
-          <div class="section__title" id="section-skills-domain-title"></div>
+          <h2 class="section__title" id="section-skills-domain-title"></h2>
           <div class="skills" id="cv-skills-domain">
             <!-- Injected by cv.js -->
           </div>
         </div>
-      </div>
+      </section>
 
-    </div>
-  </div>
+    </article>
+  </main>
 
   <script src="/assets/js/cv.js"></script>
 </body>

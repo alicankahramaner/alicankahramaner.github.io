@@ -171,10 +171,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!container || !data.experience) return;
 
         container.innerHTML = data.experience.map((item, index) => {
-            const projects = t(item.projects);
-            const projectsHtml = Array.isArray(projects)
-                ? projects.map(p => `<li>${p}</li>`).join('')
-                : '';
+            const projects = item.projects || [];
+            const projectsHtml = projects.map(p => {
+                const title = t(p.name);
+                const desc = t(p.description);
+                const techList = Array.isArray(p.technologies) && p.technologies.length > 0
+                    ? `<div class="project-tech" style="font-size: 0.85em; color: var(--text-secondary); margin-top: 4px;"><strong>Tech:</strong> ${p.technologies.join(', ')}</div>`
+                    : '';
+                const descBlock = desc ? `<div class="project-desc" style="font-size: 0.9em; margin-top: 4px; color: var(--text-secondary);">${desc}</div>` : '';
+
+                return `<li><div style="font-weight: 500;">${title}</div>${descBlock}${techList}</li>`;
+            }).join('');
 
             return `
                 <div class="experience-item reveal" style="transition-delay: ${index * 100}ms">
