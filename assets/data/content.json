@@ -100,8 +100,8 @@
             "en": "Senior Front-End Developer | Front-End Architect (React Ecosystem)"
         },
         "about": {
-            "tr": "10 yılı aşkın süredir profesyonel Front-End geliştirici ve Front-End Architect olarak çalışıyorum. Front-End mimarisi tasarlar, uygulama yapısını optimize eder ve projelerde performans, güvenlik ile kullanıcı deneyimini stratejik olarak iyileştiririm. Modern web ve mobil teknolojileri yakından takip eder, projelerde en iyi uygulamaları uygularım. Uzaktan veya ekip ortamında proje yönetimi, teknik koordinasyon ve problem çözme konularında güçlü katkı sağlarım. Lisans gerekliliği olmasına rağmen, Architect seviyesindeki deneyimim ve büyük ölçekli projelerdeki katkılarım bu farkı kapatmaktadır.",
-            "en": "I have over 10 years of professional experience as a Front-End developer and Front-End Architect. I design front-end architectures, optimize application structures, and strategically improve performance, security, and user experience. I closely follow modern web and mobile technologies and apply best practices in projects. I contribute effectively in both remote and team settings with project management, technical coordination, and problem-solving skills. Although the role requires a Bachelor's degree, my Architect-level experience and involvement in large-scale projects compensate for this gap."
+            "tr": "10 yılı aşkın profesyonel deneyime sahip bir Frontend Architect olarak; büyük ölçekli projelerin mimari tasarımını üstleniyor, uygulama yapılarını optimize ediyor ve performans ile kullanıcı deneyimini stratejik olarak en üst seviyeye taşıyorum. Modern web ve mobil ekosistemindeki en iyi uygulamaları (best practices) projelere entegre etme, teknik koordinasyon ve karmaşık problem çözme süreçlerinde güçlü bir liderlik sergiliyorum. Senior ve Architect seviyesindeki teknik derinliğimle, yüksek ölçekli sistemlerin sürdürülebilirliğini ve güvenliğini sağlamaya odaklanıyorum.",
+            "en": "As a Frontend Architect with 10+ years of professional experience, I lead the architectural design of large-scale projects, optimize application structures, and elevate performance and user experience to the highest level. I integrate modern web and mobile best practices into projects, provide technical coordination, and take an active role in solving complex problems. With my Senior and Architect-level technical depth, I focus on building scalable, sustainable, and secure systems."
         },
         "sections": {
             "experience": {
@@ -160,8 +160,11 @@
         "domain": [
             "Payment Systems",
             "REST API",
-            "Debugging",
+            "Advanced Debugging & Memory Profiling",
             "Monorepo",
+            "Micro-Frontends & Monorepo Strategies",
+            "Design Systems",
+            "Project Planning & Requirement Analysis (SDLC)",
             "Android POS App-to-App Communication",
             "Mobile Integration & Native Modules",
             "Performance Optimization",
@@ -177,7 +180,7 @@
     },
     "experience": [
         {
-            "company": "GPay (Remote)",
+            "company": "GPay",
             "role": "Front-End Architect",
             "date": "09/2020 - 10/2025",
             "location": {
@@ -252,7 +255,7 @@
             }
         },
         {
-            "company": "DataSoft (Hybrid)",
+            "company": "DataSoft",
             "role": "Senior Front-End Developer",
             "date": "01/2019 - 09/2020",
             "location": {
@@ -287,7 +290,7 @@
             }
         },
         {
-            "company": "CodinQ (Remote)",
+            "company": "CodinQ",
             "role": "Senior Front-End Developer",
             "date": "11/2017 - 07/2018",
             "location": {
@@ -320,7 +323,7 @@
             }
         },
         {
-            "company": "NetBt Danışmanlık Hizmetleri (On-site)",
+            "company": "NetBt Danışmanlık Hizmetleri",
             "role": "Senior Front-End Developer",
             "date": "10/2017 - 11/2017",
             "location": {
@@ -351,7 +354,7 @@
             }
         },
         {
-            "company": "Neyasis Technology (On-site)",
+            "company": "Neyasis Technology",
             "role": "Senior Front-End Developer",
             "date": "08/2016 - 09/2017",
             "location": {
@@ -409,7 +412,7 @@
             }
         },
         {
-            "company": "MagiClick Digital Solutions (On-site)",
+            "company": "MagiClick Digital Solutions",
             "role": "Front-End Developer",
             "date": "04/2014 - 12/2014",
             "location": {
