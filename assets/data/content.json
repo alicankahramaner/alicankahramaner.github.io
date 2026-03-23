@@ -112,6 +112,10 @@
                 "tr": "Eğitim",
                 "en": "Education"
             },
+            "language": {
+                "tr": "Dil",
+                "en": "Language"
+            },
             "projects": {
                 "tr": "Projeler",
                 "en": "Projects"
@@ -139,7 +143,23 @@
                 "en": "Istanbul, Türkiye"
             },
             "date": "2012 - 2014"
-        }
+        },
+        "language": [
+            {
+                "lang": {
+                    "tr": "İngilizce",
+                    "en": "English"
+                },
+                "level": "B1"
+            },
+            {
+                "lang": {
+                    "tr": "Türkçe",
+                    "en": "Turkish"
+                },
+                "level": "Fleunt"
+            }
+        ]
     },
     "skills": {
         "language": [

@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Education
         renderEducation(cv);
 
+        // Language
+        renderLanguage(cv)
+
         // Projects
         renderProjects(experience, cv);
 
@@ -117,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const edu = cv.education;
         el.innerHTML = `
-            <div class="section__list-item">
+            <div>
                 <div class="left">
                     <div class="name">${t(edu.school)}</div>
                     <div class="name">${t(edu.dept)}</div>
@@ -126,6 +129,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
+    }
+
+
+    function renderLanguage(cv) {
+        const titleEl = document.getElementById('section-language-title');
+        const el = document.getElementById('cv-language');
+
+        if (titleEl) titleEl.textContent = t(cv.sections.language);
+        if (!el) return;
+
+        const edu = cv.language;
+
+        let content = "";
+        edu.forEach(element => {
+            content += `
+            <div class="section__list-item">
+                <div class="left">
+                    <div class="name">${t(element.lang[lang])}</div>
+                    <div>${t(element.level)}</div>
+                </div>
+            </div>
+        `;
+        });
+
+        el.innerHTML = content
+
     }
 
     function renderProjects(experience, cv) {
